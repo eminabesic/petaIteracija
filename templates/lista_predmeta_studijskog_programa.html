@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izvještaj predmeta</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Naziv studijskog programa</th>
+            <th>Naziv predmeta</th>
+        </tr>
+        {% for podatak in lista_predmeta %}
+            <tr>
+                
+                <td>{{ podatak[0] }}</td>
+                <td>{{ podatak[1] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
